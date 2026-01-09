@@ -2,4 +2,4 @@ DISCLAIMER: All resources are not mine and are used only for the purposes of ful
 
 Live Previews:
 1. Survey Website: https://codepen.io/dwrugqco-the-lessful/full/JoYNpXz
-2. Tribute Website: https://codepen.io/dwrugqco-the-lessful/full/WbQaWzP  *Note: boostrap element cannot be shown in codepen*
+2. Tribute Website: https://codepen.io/dwrugqco-the-lessful/full/WbQaWzP  *Note: boostrap elements cannot be shown in codepen*
