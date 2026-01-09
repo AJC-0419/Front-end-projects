@@ -68,6 +68,10 @@ fieldset {
   border-bottom: 3px solid #3b3b4f;
 }
 
+.choice {
+  font-size: 24px;
+}
+
 
 fieldset:last-of-type {
   border-bottom: none;
