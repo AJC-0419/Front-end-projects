@@ -1,0 +1,94 @@
+
+/*Background Image is set to encompass full view of a screen that has spacing all around*/
+body{ 
+  background-image: url("https://www.avpartners.com/wp-content/uploads/2017/08/Seminars-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial;
+  padding: 20px;
+}
+
+/*Centers the caption of the seminar evaluation segment after the personal information*/
+legend{
+  font-size: 32px;
+  text-align: center;
+}
+
+/*font size of all labels*/
+label{
+  font-size: 20px
+}
+/*font size of all list elements*/
+li{
+  font-size: 24px;
+}
+
+/*sets the title and description of the Seminar Evaluation (before the main form) title and description*/
+#title, #description{
+  text-align: center;
+  font-size: 23px;
+  text-shadow: 2px 2px 2px #000000;
+  font-family: Sans-serif, helvetica;
+  color: white;
+}
+
+/*sets the min-width, max-width and height of the form regardless of where you view them with rounded corners
+
+sets to center through margin, and internal spacing*/
+form {
+  background-color: #FDF6E4;
+  width: 60vw;
+  max-width: 700px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 2em;
+  border-radius: 10px;
+}
+
+/*edits the fields (Personal Info, Evaluation) to show a line at the bottom to act as a visible divider*/
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+/*edits the last fieldset (Submit button) to not have a border-bottom*/
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+/*edits each label (specifically, the list elements) to appear in a new line. Without a display, each label is shown based on the width of the form*/
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+/*Sets the width, height, margin, and border radius of each of the input, text area and select options */
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  border-radius: 10px;
+}
+
+/*Reverts to original width of every inline class, aligns with every option with their respective button for their active status*/
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+/*Adjusts the style of the submit button*/
+input[type="submit"] {
+  display: block;
+  width: 80%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  border-color: white;
+  min-width: 300px;
+}
