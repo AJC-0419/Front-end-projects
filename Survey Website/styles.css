@@ -1,0 +1,110 @@
+
+
+body{ 
+  font-family: Indie Flower, cursive;
+  padding: 20px;
+  background-color: #F7F1DE;
+}
+
+
+legend{
+  font-size: 32px;
+  text-align: center;
+}
+
+
+label{
+  font-size: 20px
+}
+
+li{
+  font-size: 24px;
+}
+
+.title{
+  text-align: center;
+  font-size: 36px;
+  margin: 0 auto;
+  width: 70%;
+}
+
+label p{
+  background-color: #A8BBA3;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#description {
+  text-align: center;
+  font-size: 32px;
+}
+
+label{
+  font-size: 32px
+}
+
+
+form {
+  background-color: #B87C4C;
+  width: 60vw;
+  max-width: 700px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 2em;
+  border-radius:40px;
+  font-family: "Inconsolata", monospace;
+}
+
+#sub-form{
+  background-color: #C4A484;
+  padding: 2em;
+  border-radius:40px;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+
+input,
+textarea,
+select {
+  width: 100%;
+  min-height: 2em;
+  border-radius: 10px;
+}
+
+#multi-choice{
+  margin-left: 7%;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+
+input[type="submit"] {
+  display: block;
+  width: 80%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  border-color: white;
+  background-color: #F7F1DE;
+}

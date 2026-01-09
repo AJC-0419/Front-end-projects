@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seminar Survey</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Indie+Flower&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <p id ="description"> Your Opinion Matters to Us! Let us know what you think</p>
+    <form method="post" action='https://register-demo.freecodecamp.org' id ="survey-form">
+      <div id="sub2-form">
+        <label for="heading">
+            <p class ="title"> Evaluation Form </p>
+        </label>
+      </div>
+      <div id="sub-form">
+    <fieldset>
+        <label id="name-label">
+          Enter Your Name: 
+          <br>
+          <input id="name" name="name" type="text" required placeholder="John Matthew III"/>
+        </label>
+    
+        <label id="email-label">Enter Your Email: <input id="email" name="email" type="email" required placeholder="Example@gmail.com" />
+        </label>
+
+         <label id="number-label">Input your age (years): <input id="number" type="number" name="age" min="13" max="120" placeholder="69" /></label>
+      
+      <label for="referrer">Position or Role
+          <select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Teacher</option>
+            <option value="3">Full time learner</option>
+            <option value="4">Full time worker</option>
+            <option value="5">Prefer not to Say</option>
+          </select>
+        </label>
+        </label>
+      </fieldset>
+      <br><br>
+      <fieldset>
+        <legend class="title">Please Answer Honestly on the Following Questions:</legend>
+       <ul> 
+        <li><label id = "choose"> <b>The seminar was very informative</b></label></li>
+           <label><input type="radio" name="choose-type" class="inline" value="1"  />Agree</label>
+           <label><input type="radio" name="choose-type" class="inline" value="-1" />Disagree</label>
+           <label ><input type="radio" name="choose-type" class="inline" value="0" />Just Right</label>
+      </ul>
+      <br>
+      <ul>
+       <li ><label id = "into"><b> The seminar was organized and flowed smoothly</b></label></li>
+           <label><input  type="radio" name="close-type" class="inline"  value="1" />Agree</label>
+           <label><input type="radio" name="close-type" class="inline" value="-1"/>Disagree</label>
+           <label><input type="radio" name="close-type" class="inline" value="0"/>Just Right</label>
+      </ul>
+      <br>
+      <ul>
+        <li ><label id = "me"> <b>The seminar was welcoming</b></label></li>
+           <label><input type="radio" name="re-type" class="inline"  value="1" />Agree</label>
+           <label><input type="radio" name="re-type" class="inline" value="-1"/>Disagree</label>
+           <label for= "wel"><input id= "wel" type="radio" name="re-type" class="inline" value="0"/>Just Right</label>
+      </ul>
+      <br>
+       <label for="impovements">Improvements that can be made:</label>
+       <label id="multi-choice">
+        <input class="inline" type="checkbox" value = "Better" name="improve" />Better Selection of Speakers<br>
+        <input class="inline" type="checkbox" value = "Topic" name="improve" />Improving hands-on topics<br>
+        <input class="inline" type="checkbox" value = "Choice" name="improve" />Choice of venue<br>
+      </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="referrer">How did you hear about us?
+          <select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Friends</option>
+            <option value="2">Family</option>
+            <option value="3">Teachers & Colleagues</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+
+        <label for="com">Comments or Suggestions:
+          <textarea id="com" name="com" rows="3" cols="30" placeholder="Seminar is......."></textarea>
+        </label>
+      </fieldset>
+      </label>
+      <input type="submit" id="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
