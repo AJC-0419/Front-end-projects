@@ -68,7 +68,7 @@ fieldset {
   border-bottom: 3px solid #3b3b4f;
 }
 
-.choice {
+.choice ,#multi-choice{
   font-size: 24px;
 }
 
@@ -112,3 +112,4 @@ input[type="submit"] {
   border-color: white;
   background-color: #F7F1DE;
 }
+
