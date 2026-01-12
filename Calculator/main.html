@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Indie+Flower&family=Noto+Sans+Math&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id = "Screen">
+            <div id="display">
+                <p>0</p>
+            </div>
+        </div>
+        <div id = "Buttons">
+            <button type="button" onclick="append('1')" class="button" id="button1">1</button>
+            <button type="button" onclick="append('2')" class="button" id="button2">2</button>
+            <button type="button" onclick="append('3')" class="button" id="button3">3</button>
+            <button type="button" onclick="addFunc()" class="button" id="plus">+</button>
+            <button type="button" onclick="append('4')" class="button" id="button4">4</button>
+            <button type="button" onclick="append('5')" class="button" id="button5">5</button>
+            <button type="button" onclick="append('6')" class="button" id="button6">6</button>
+            <button type="button" onclick="subFunc()" class="button" id="minus">-</button>
+            <button type="button" onclick="append('7')" class="button" id="button7">7</button>
+            <button type="button" onclick="append('8')" class="button" id="button8">8</button>
+            <button type="button" onclick="append('9')" class="button" id="button9">9</button>
+            <button type="button" onclick="mulFunc()" class="button" id="multiply">x</button>
+            <button type="button" onclick="clearScreen()" class="button" id="clear">CE</button>
+            <button type="button" onclick="perFunc()" class="button" id="percent">%</button>
+            <button type="button" onclick="append('0')" class="button" id="zero">0</button>
+            <button type="button" onclick="calcResult()" class="button" id="equals">=</button>
+        </div>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>
