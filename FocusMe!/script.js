@@ -12,6 +12,11 @@ function addTask() {
     const inp = document.createElement("input");
     inp.type = "text";
     inp.placeholder = "insert text here";
+
+    const del = document.createElement("input");
+    del.type = "submit";
+    del.value = "delete";
+    del.id = "rem";
     taskbox.appendChild(check);
     taskbox.appendChild(inp);
     box.appendChild(taskbox);
