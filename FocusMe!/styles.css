@@ -1,60 +1,93 @@
 .cedarville-cursive-regular {
-  font-family: "Cedarville Cursive", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
-
-body{
+/* Global Elements */
+body {
     background-color: black;
     color: white;
     font-family: sans-serif;
 }
 
-#header{
+::placeholder {
+    color: #0F0F0F;
+}
+
+/* Header */
+#header {
     background-color: #0F0F0F;
     color: #ffffff;
-    position:absolute;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     padding-left: 2%;
-    font-family:'Cedarville Cursive';
+    font-family: 'Cedarville Cursive';
 }
 
-#add{
-    background-color: #0F0F0F;
-    position: absolute;
-    bottom: 0;
-    width: 6%;
-    left: 22%;
+/* Layout */
+main {
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-boxes {
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#To-do {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* To-do Box */
+#tdbox {
+    flex: 1;
+    width: 90%;
+    overflow: auto;
+}
+
+#tdbox::-webkit-scrollbar {
+    display: none;
+}
+
+#add {
+    width: 90%;
+    margin-bottom: 5%;
     border-radius: 10px;
+    background-color: #0F0F0F;
     cursor: pointer;
+    margin-top: auto;
 }
 
-.boxinsert{
-    padding: 20px;
+.boxinsert {
     display: flex;
     gap: 25px;
+    padding: 20px;
 }
 
-::placeholder{
-    color: #0F0F0F;
+#taskelem {
+    transform: scale(2);
+    background-color: transparent;
 }
 
-#taskelem{
-     transform: scale(2);
-     background-color: transparent;
-}
-input[type = "text"]{
+/*For user input */
+input[type="text"] {
+    width: 80%;
     font-size: 150%;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid;
-    width: 80%;
-   
 }
-input[type = "text"]:focus{
+
+input[type="text"]:focus {
     outline: none;
 }
 
@@ -62,54 +95,37 @@ input[type="text"]:focus::placeholder {
     color: transparent;
 }
 
-
-main{
-    margin-top: 6%;
-    display: flex;
-    justify-content: center;
-}
-
-.main-boxes{
-    width: 50%;
-    text-align: center;
-    height: 100vh;
-}
-
-.sd{
-    background-color: lightgray;
+/* multiple div inner boxes */
+.sd {
     margin: 3%;
     border-radius: 40px;
+    background-color: lightgray;
 }
 
-#tdbox{
-    height:80%;
-}
-
-.time{
+/* for timer elements*/
+.time {
     color: black;
 }
 
-.boxdiv{
-    text-align: center;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    justify-content: center;
-    gap: 30px;
-    font-size: 20px;
-}
-
-
-#tdisplay{
-    font-size: 30px;
-}
-
-#tbox{
+#tbox {
     height: 80%;
 }
 
-#tbox_song{
-    display: none;
+#tbox_song {
     height: 22%;
+    display: none;
+}
+
+#tdisplay {
+    font-size: 30px;
+}
+
+.boxdiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
 }
