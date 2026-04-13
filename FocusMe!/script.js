@@ -16,10 +16,15 @@ function addTask() {
     const del = document.createElement("input");
     del.type = "submit";
     del.value = "delete";
-    del.id = "rem";
+    del.id = "rem"
+    del.onclick = function () {
+        taskbox.remove();
+    };
     taskbox.appendChild(check);
     taskbox.appendChild(inp);
+    taskbox.appendChild(del);
     box.appendChild(taskbox);
 }
 
 document.getElementById("add").addEventListener("click", addTask);
+
