@@ -1,6 +1,8 @@
+
+
 function addTask() {
     const box = document.getElementById("tdbox");
-
+    box.get
     const taskbox = document.createElement("div");
     taskbox.className = "boxinsert";
 
@@ -26,5 +28,33 @@ function addTask() {
     box.appendChild(taskbox);
 }
 
+function addNum(num){
+   const numAdd =  document.getElementById(num);
+   let Curr = parseInt(numAdd.textContent);
+   Curr++;
+   if (Curr < 10){
+    numAdd.textContent = "0" + Curr;
+   }
+   else{
+     numAdd.textContent = Curr;
+   }
+}
+
+function subNum(num){
+   const numAdd =  document.getElementById(num);
+   let Curr = parseInt(numAdd.textContent);
+    if (Curr > 0) {
+      Curr--;
+   }
+   if (Curr < 10) {
+      numAdd.textContent = "0" + Curr;
+   } else {
+      numAdd.textContent = Curr;
+   }
+}
+
+
 document.getElementById("add").addEventListener("click", addTask);
+
+
 
