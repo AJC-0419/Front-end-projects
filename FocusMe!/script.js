@@ -30,14 +30,52 @@ function addTask() {
 
 function addNum(num){
    const numAdd =  document.getElementById(num);
+   const check = numAdd.id;
    let Curr = parseInt(numAdd.textContent);
-   Curr++;
-   if (Curr < 10){
-    numAdd.textContent = "0" + Curr;
-   }
-   else{
-     numAdd.textContent = Curr;
-   }
+  switch(check){
+   case "num1":
+      if (Curr == 24){
+          numAdd.textContent = "00";
+      }
+      else{
+         Curr++;
+         if (Curr < 10){
+         numAdd.textContent = "0" + Curr;
+         }
+         else{
+         numAdd.textContent = Curr;
+         }
+      }
+      break;
+   case "num2":
+      if (Curr == 60){
+          numAdd.textContent = "00";
+      }
+      else{
+          Curr++;
+         if (Curr < 10){
+         numAdd.textContent = "0" + Curr;
+         }
+         else{
+         numAdd.textContent = Curr;
+         }
+      }
+       break;
+   case "num3":
+      if (Curr == 60){
+          numAdd.textContent = "00";
+      }
+      else{
+         Curr++;
+         if (Curr < 10){
+         numAdd.textContent = "0" + Curr;
+         }
+         else{
+         numAdd.textContent = Curr;
+         }
+      }
+       break;
+  }
 }
 
 function subNum(num){
