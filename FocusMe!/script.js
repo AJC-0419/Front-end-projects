@@ -35,43 +35,43 @@ function addNum(num){
   switch(check){
    case "num1":
       if (Curr == 24){
-          numAdd.textContent = "00 hr";
+          numAdd.textContent = "00 hrs";
       }
       else{
          Curr++;
          if (Curr < 10){
-         numAdd.textContent = "0" + Curr  +" hr";
+         numAdd.textContent = "0" + Curr  +" hrs";
          }
          else{
-         numAdd.textContent = Curr+" hr";
+         numAdd.textContent = Curr+" hrs";
          }
       }
       break;
    case "num2":
       if (Curr == 60){
-          numAdd.textContent = "00"+" min";
+          numAdd.textContent = "00"+" mins";
       }
       else{
           Curr++;
          if (Curr < 10){
-         numAdd.textContent = "0" + Curr +" min";
+         numAdd.textContent = "0" + Curr +" mins";
          }
          else{
-         numAdd.textContent = Curr+" min";
+         numAdd.textContent = Curr+" mins";
          }
       }
        break;
    case "num3":
       if (Curr == 60){
-          numAdd.textContent = "00"+" sec";
+          numAdd.textContent = "00"+" secs";
       }
       else{
          Curr++;
          if (Curr < 10){
-         numAdd.textContent = "0" + Curr +" sec";
+         numAdd.textContent = "0" + Curr +" secs";
          }
          else{
-         numAdd.textContent = Curr + " sec";
+         numAdd.textContent = Curr + " secs";
          }
       }
        break;
