@@ -63,7 +63,7 @@ main {
     width: 90%;
     margin-bottom: 5%;
     border-radius: 10px;
-    background-color: #0F0F0F;
+    background-color: gray;
     cursor: pointer;
     margin-top: auto;
 }
@@ -112,19 +112,25 @@ input[type="text"]:focus::placeholder {
 }
 
 #tbox_song {
-    height: 22%;
+    height: 20%;
     display: none;
 }
 
 #tdisplay {
     font-size: 30px;
+    margin-top: 3%;
+}
+
+.up, .down{
+    cursor: pointer;
+    width: 50%;
 }
 
 .boxdiv {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
     text-align: center;
     font-size: 20px;
     margin: auto;
