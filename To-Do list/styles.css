@@ -1,0 +1,117 @@
+.cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #81A1CA;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+::placeholder {
+    color: #0F0F0F;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#main-box {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 80%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    background-color: #D9C3A5;
+    border-radius: 20px;
+    padding: 30px 20px;
+}
+
+
+
+#To-do {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tdbox {
+    position: relative;
+    top: -60px;
+    z-index: 1;
+    width: 85%;
+    height: 700px;
+    overflow: auto;
+    border-radius: 40px;
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+#tdbox::-webkit-scrollbar {
+    display: none;
+}
+
+#border{
+    position: relative;
+    top: -30px;
+    border-top: 20px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+    width: 50%;
+    left: 25%;
+    height: 50px;
+    border-radius: 0px 0px 20px 20px;
+    z-index: 2;
+}
+
+
+.boxinsert {
+    display: flex;
+    gap: 20px;
+    padding: 20px 30px;
+}
+
+.boxinsert:nth-child(1) {
+    padding-top: 50px;
+    padding-right: 90px;
+}
+
+
+#taskelem {
+    transform: scale(2);
+    background-color: transparent;
+}
+
+
+input[type="text"] {
+    width: 90%;
+    font-size: 150%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input[type="text"]:focus::placeholder {
+    color: transparent;
+}
+
+input[type="button"] {
+    background-color: transparent;
+    border: none;
+    font-size: 200%;
+    cursor: pointer;
+    color:red;
+}
+
+
