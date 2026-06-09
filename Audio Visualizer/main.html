@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Indie+Flower&family=Noto+Sans+Math&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id ="box1">
+        <div id="text">
+            <div id="text1">Welcome DJ!</div>
+            <div id="text2">Now Playing:</div>
+        </div>
+        <canvas id="line"></canvas>
+    </div>
+    <div id="box2">
+        <div id="settings" class="outer-div"></div>
+        <div id="audio-box" class="outer-div">
+            <div id="options">
+                <div>
+                    <input id="songUpload" type="file" value="Upload a Song">
+                </div>
+                <div>
+                    <input id="sampleButton" type="button" value="Play a sample">
+                </div>
+            </div>
+            <audio id="sampleAudio" preload="auto">
+                <source src="audio/sample%20music.mp3" type="audio/mpeg">
+            </audio>
+            <div id="buttons">
+                <div id = "play"><img src="icons/small-play.png" alt="" width="80%" onclick=""></div>
+                <div id = "pause"><img src="icons/Pause.png" alt=""></div>
+            </div>
+        </div>
+        <div id="disc" class="outer-div"></div>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>
