@@ -3,6 +3,5 @@ DISCLAIMER: Resources found in Survey and Tribute Websites are not mine and are 
 
 Live Previews:
 1. Survey Website: https://codepen.io/dwrugqco-the-lessful/full/JoYNpXz
-2. Tribute Website: https://codepen.io/dwrugqco-the-lessful/full/WbQaWzP  *Note: Bootstrap elements cannot be shown in CodePen*
-3. Calculator Website: https://codepen.io/dwrugqco-the-lessful/full/JoKRebm
-4. To-do list Website: https://codepen.io/dwrugqco-the-lessful/pen/LEbaJwo 
+2. Calculator Website: https://codepen.io/dwrugqco-the-lessful/full/JoKRebm
+3. To-do list Website: https://codepen.io/dwrugqco-the-lessful/pen/LEbaJwo 
